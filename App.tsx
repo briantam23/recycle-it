@@ -3,15 +3,16 @@ import { Component } from 'react';
 import { Platform, StatusBar, StyleSheet, View } from 'react-native';
 import { AppLoading, Asset, Font, Icon } from 'expo';
 import AppNavigator from './navigation/AppNavigator';
-
 import { Provider } from 'react-redux';
 import store from './store';
+
 
 interface AppState {
   skipLoadingScreen: boolean;
 }
 
-export class App extends Component<AppState> {
+
+class App extends Component<AppState> {
   state = {
     isLoadingComplete: false,
   };
