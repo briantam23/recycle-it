@@ -12,7 +12,7 @@ interface AppState {
 }
 
 
-class App extends Component<AppState> {
+export class App extends Component<AppState> {
   state = {
     isLoadingComplete: false,
   };
